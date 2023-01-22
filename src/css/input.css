@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans font-normal bg-[#1c1d18] text-gray-50 text-lg overflow-x-hidden;
+}
+
+body {
+  @apply overflow-x-hidden;
+  cursor: url('../images/cursor.svg'), auto;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #fefefe #312b2b;
+}
+
+body::-webkit-scrollbar {
+  @apply w-2;
+}
+
+body::-webkit-scrollbar-track {
+  background: #312b2b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fefefe;
+  border-radius: 14px;
+  border: 1px solid #312b2b;
+}
+.cards-wrapper {
+  @apply grid items-center justify-center
+   place-content-center gap-4 mt-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5;
+}
+
+.video-js .vjs-big-play-button {
+  top: 50% !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -50%) !important;
+}
